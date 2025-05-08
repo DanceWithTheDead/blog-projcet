@@ -1,6 +1,6 @@
 <x-layout>
     Post-page
-    <x-slot:abb>
+    <x-slot:post>
         @foreach( $posts as $post)
         <div class="card mt-2" style="width: 50rem;">
             <div class="card-body">
@@ -10,7 +10,7 @@
             </div>
         </div>
         @endforeach
-    </x-slot:abb>
+    </x-slot:post>
 </x-layout>
 
 
