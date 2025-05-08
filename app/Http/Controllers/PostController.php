@@ -12,8 +12,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
-        return view('post-page', compact('posts'));
+        $posts = Post::all()->sortBy('id');
+        return view('posts.post-page', compact('posts'));
     }
 
     /**
@@ -37,7 +37,8 @@ class PostController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $post = Post::findOrFail($id);
+        return view('posts.show-post', compact('post'));
     }
 
     /**
