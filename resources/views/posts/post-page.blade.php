@@ -3,7 +3,7 @@
     <x-slot:posts>
         @foreach( $posts as $post)
             <div class="card mt-2">
-                <h5 class="card-header text-bg-primary">{{ $post->title }}</h5>
+                <h5 class="card-header text-bg-primary font-bold">{{ $post->title }}</h5>
                 <div class="card-body">
                     <h1 class="card-title">Special title treatment</h1>
                     <p class="card-text">{{ $post->content }}</p>
