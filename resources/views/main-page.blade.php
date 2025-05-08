@@ -1,3 +1,3 @@
 <x-layout>
-    <h1>Welcome from main page</h1>
+    Main-page
 </x-layout>

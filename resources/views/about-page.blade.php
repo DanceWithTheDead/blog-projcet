@@ -1,3 +1,5 @@
 <x-layout>
-    <h1>Welcome from about page</h1>
+    About-page
+
+
 </x-layout>
